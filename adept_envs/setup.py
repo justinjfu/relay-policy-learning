@@ -4,6 +4,10 @@ from setuptools import find_packages
 setup(
     name='adept_envs',
     version='0.1',
+    package_data={
+      'adept_envs': ['adept_envs/franka/assets/*.xml'],
+    },
+    include_package_data=True,
     install_requires=['gym', 
                       'numpy', 
                       'mujoco_py', 
